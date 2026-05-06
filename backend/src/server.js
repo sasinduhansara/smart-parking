@@ -111,6 +111,12 @@ app.post("/api/gate/open", (req, res) => {
   parkingState.gateOpen = true;
   console.log("🔓 Gate OPEN command sent!");
   res.json({ success: true, message: "Gate opened successfully" });
+
+  // 10 seconds පස්සේ auto reset
+  setTimeout(() => {
+    parkingState.gateOpen = false;
+    console.log("🔒 Gate auto reset!");
+  }, 10000);
 });
 
 app.post("/api/gate/reset", (req, res) => {
