@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 
-const API = "http://localhost:5000";
+const API = "https://smart-parking-backend-o82w.onrender.com";
 
 function Register() {
   const navigate = useNavigate();

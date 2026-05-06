@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-const API = "http://localhost:5000";
+const API = "https://smart-parking-backend-o82w.onrender.com";
 
 function Dashboard() {
   const [spots, setSpots] = useState([]);
